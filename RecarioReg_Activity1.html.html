@@ -1,0 +1,75 @@
+<html>
+<head>
+	<link rel="stylesheet" href="mdl/material.min.css">
+	<script src="mdl/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="margin: 0% 0% 0% 0%;">
+<!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent {
+  background: url('../assets/demos/transparent.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+</style>
+
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">GDG Dev Fest 2015</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">Home</a>
+        <a class="mdl-navigation__link" href="">Current News</a>
+        <a class="mdl-navigation__link" href="">Previous Events</a>
+        <a class="mdl-navigation__link" href="">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">GDG Dev Fest 2015</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Home</a>
+      <a class="mdl-navigation__link" href="">GDG Dev Fest 2015</a>
+      <a class="mdl-navigation__link" href="">GDG Dev Fest 2014</a>
+      <a class="mdl-navigation__link" href="">GDG Dev Fest 2013</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content" style="margin: 5% 5%;">
+    <div class="page-content">
+				<!-- MDL Progress Bar with Buffering -->
+		<div id="p3" class="mdl-progress mdl-js-progress"></div>
+		<script>
+		  document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+			this.MaterialProgress.setProgress(53);
+			this.MaterialProgress.setBuffer(50);
+		  });
+		</script>
+		Waiting for contents...
+	</div>
+  </main>
+  
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+</footer>  
+</div>
+
+</body>
+</html>

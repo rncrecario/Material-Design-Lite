@@ -1,0 +1,128 @@
+<html>
+<head>
+	<link rel="stylesheet" href="mdl/material.min.css">
+	<script src="mdl/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-card.mdl-card{ width: 521px;}
+.demo-card > .mdl-card__title{
+	color: #fff;
+	height; 176px;
+		background: url('pic.PNG'); center / cover;
+}
+.demo-card > .mdl-card__menu{
+	color: #fff;
+}
+
+</style>
+
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">GDG Dev Fest 2015</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">Home</a>
+        <a class="mdl-navigation__link" href="">Current News</a>
+        <a class="mdl-navigation__link" href="">Previous Events</a>
+        <a class="mdl-navigation__link" href="">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">GDG Dev Fest 2015</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Home</a>
+      <a class="mdl-navigation__link" href="">GDG Dev Fest 2015</a>
+      <a class="mdl-navigation__link" href="">GDG Dev Fest 2014</a>
+      <a class="mdl-navigation__link" href="">GDG Dev Fest 2013</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content" style="margin: 5% 5%;">
+	<div class="page-content">
+		<div class="mdl-grid">
+		<!-- Simple Textfield -->
+		<form action="#">
+		  <div class="mdl-textfield mdl-js-textfield">
+			<input class="mdl-textfield__input" type="text" id="username" />
+			<label class="mdl-textfield__label" for="username">username...</label>
+		  </div>
+		<!-- password Textfield -->
+		  <div class="mdl-textfield mdl-js-textfield">
+			<input class="mdl-textfield__input" type="password" id="password" />
+			<label class="mdl-textfield__label" for="password">password...</label>
+		  </div>
+		</form>
+		<button class="mdl-button mdl-js-button mdl-button--raised">Login</button>
+		
+		<div class="demo-card-wide mdl-card mdl-shadow--2dp" style="margin: 10%">
+		  <div class="mdl-card__title">
+			<h2 class="mdl-card__title-text">Aloha</h2>
+		  </div>
+		  <div class="mdl-card__supporting-text">
+			Whatever
+		  </div>
+		  <div class="mdl-card__actions mdl-card--border">
+			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+			  Get Started
+			</a>
+		  </div>
+		  <div class="mdl-card__menu">
+			<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+			  <i class="material-icons">share</i>
+			</button>
+		  </div>
+		</div>
+  
+<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="margin: 10%">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Material</th>
+      <th>Quantity</th>
+      <th>Unit price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+      <td>25</td>
+      <td>$2.90</td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+      <td>50</td>
+      <td>$1.25</td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+      <td>10</td>
+      <td>$2.35</td>
+    </tr>
+  </tbody>
+</table>
+  
+  
+  </main>
+  
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+</footer>  
+</div>
+
+</body>
+</html>
